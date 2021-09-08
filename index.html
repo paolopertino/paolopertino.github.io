@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -28,7 +28,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-brain nav__icon"></i> Skills</a></li>
-                    <li class="nav__item"><a href="#servizi" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i> Servizi</a></li>
+                    <li class="nav__item"><a href="#istruzione" class="nav__link"><i class="uil uil-graduation-cap nav__icon"></i> Istruzione</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-servers nav__icon"></i> Portfolio</a></li>
                     <li class="nav__item"><a href="#contattami" class="nav__link"><i class="uil uil-message nav__icon"></i> Contattami</a></li>
                     <!-- 17.15 -->
@@ -302,7 +302,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <section class="qualification section" id="istruzione">
             <h2 class="section__title">Istruzione</h2>
             <span class="section__subtitle">Il mio percorso formativo</span>
 
@@ -410,39 +410,186 @@
         </section>
 
         <!--==================== SERVICES ====================-->
+        <!--
         <section class="services section" id="services">
 
 
         </section>
+        -->
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Progetti</h2>
+            <span class="section__subtitle">Una raccolta dei miei ultimi progetti</span>
 
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
 
-        </section>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Hoomie</h3>
+                            <p class="portfolio__description">Una semplice PWA per gestire le proprie transazioni, visualizzare quelle effettuate. La piattaforma è estesa per l'utilizzo in comune con altri utenti che possono interagire in un gruppo e gestire le spese comuni.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Visualizza
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
 
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
 
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">paolopertino.github.io</h3>
+                            <p class="portfolio__description">Dai un'occhiata alla repository di questo sito web.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Visualizza
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
 
-        </section>
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
 
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Fondamenti di Informatica - Repository</h3>
+                            <p class="portfolio__description">Raccolta di esercizi e Temi d'esame del corso "Fondamenti di Informatica" tenuto dal professor Vincenzo Caglioti A.A. 2019/2020</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Visualizza
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
 
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contattami">
+            <h2 class="section__title">Contatti</h2>
+            <span class="section__subtitle">Contattami quando vuoi attraverso i social o via e-mail.</span>
 
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
 
+                        <div>
+                            <h3 class="contact__title">E-Mail</h3>
+                            <span class="contact__subtitle">paolo.pertino@mail.polimi.it</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-github contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Github</h3>
+                            <span class="contact__subtitle">@paolopertino</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-linkedin contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Linkedin</h3>
+                            <span class="contact__subtitle">Paolo Pertino</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Nome</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-Mail</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Messaggio</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Invia
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Paolo Pertino</h1>
+                    <span class="footer__subtitle">Studente PoliMi - Ingegneria Informatica</span>
+                </div>
 
+                <ul class="footer__links">
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#istruzione" class="footer__link">Istruzione</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Progetti</a>
+                    </li>
+                    <li>
+                        <a href="#contattami" class="footer__link">Contattami</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="#" class="footer__social" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+
+                    <a href="#" class="footer__social" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+
+                    <a href="#" class="footer__social" target="_blank">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer__social" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                   
+                    <a href="#" class="footer__social" target="_blank">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Paolo Pertino. All rights reserved.</p>
+        </div>
 
     </footer>
 
@@ -450,7 +597,7 @@
 
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
