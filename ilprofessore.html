@@ -12,23 +12,73 @@
     <div style="display: flex; justify-content: center;">
         <img src="./assets/img/professorepapelricamato.png" alt="?" style="width: 700px;">
     </div>
-    <div style="display: flex;justify-content: center;">
-        <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Buon <span style="color: #A62836;">Natale</span></p>
+    <div id="div__fase1" style="display: none;">
+        <div style="display: flex;justify-content: center;">
+            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Buon <span
+                    style="color: #A62836;">Natale</span></p>
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
+                Cara Bang<span style="color: #A62836;">kok</span>, sono il professore.... Colgo l'occasione per
+                augurarti un felice Natale insieme ai <span style="color: red; font-weight: bold; font-size: small;"> [!
+                    SARS-COV-2 UPDATE !] </span><s>tuoi cari</s> tuoi fratelli.
+            </p>
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
+                Oggi, 25 Dicembre 2021, avrà inizio il "Piano Babbo Natale" che ci guiderà nella nostra prossima
+                missione... <br>
+                Non posso fornirti troppi dettagli al momento, è importante che essi rimangano segreti ancora per un
+                po'. <br>
+                La Capitale del Regno di Sardegna ci aspetta... <br>
+                Torna su questa pagina il <span style="color: red; font-weight: bold; font-size: small;"> [! SARS-COV-2
+                    UPDATE !] </span><s>26 Dicembre alle ore 17:00</s> 27 Dicembre alle ore 15, non prima, non
+                dopo...<br><br>
+                Ehi... tranquilla... "Non è come sembra" 😉
+            </p>
+        </div>
     </div>
-    <div style="display: flex;justify-content: center;">
-        <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
-            Cara Bang<span style="color: #A62836;">kok</span>, sono il professore.... Colgo l'occasione per augurarti un felice Natale insieme ai <span style="color: red; font-weight: bold; font-size: small;"> [! SARS-COV-2 UPDATE !] </span><s>tuoi cari</s> tuoi fratelli.
-        </p>
+
+    <div id="div__fase2" style="display: inline;">
+        <div style="display: flex;justify-content: center;">
+            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Fa<span
+                    style="color: #A62836;">se 2</span></p>
+        </div>
+
+        <div style="display: flex;justify-content: center;">
+            <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
+                Cara Bang<span style="color: #A62836;">kok</span>, per accedere ai dettagli della Fase 2, ricollegati su
+                questa pagina il 27 Dicembre alle ore 15.<br><br>
+                "In un piano perfetto, non c'è spazio per il caos..."
+            </p>
+        </div>
     </div>
-    <div style="display: flex;justify-content: center;">
-        <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
-            Oggi, 25 Dicembre 2021, avrà inizio il "Piano Babbo Natale" che ci guiderà nella nostra prossima missione... <br>
-            Non posso fornirti troppi dettagli al momento, è importante che essi rimangano segreti ancora per un po'. <br>
-            La Capitale del Regno di Sardegna ci aspetta... <br>
-            Torna su questa pagina il <span style="color: red; font-weight: bold; font-size: small;"> [! SARS-COV-2 UPDATE !] </span><s>26 Dicembre alle ore 17:00</s> 27 Dicembre alle ore 15, non prima, non dopo...<br><br>
-            Ehi... tranquilla... "Non è come sembra" 😉
-        </p>
-    </div>
+
+    <div style="display:flex; justify-content: center;"><button id="button1" style="visibility: visible; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;" onclick="changePhase()">Visualizza Fase
+            1</button></div>
+    <div style="display:flex; justify-content: center;"><button id="button2" style="visibility: hidden; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;" onclick="changePhase()">Visualizza Fase
+            2</button></div>
+
+    <script>
+        function changePhase() {
+            var element__fase1 = document.getElementById("div__fase1");
+            var element__fase2 = document.getElementById("div__fase2");
+            var element__button1 = document.getElementById("button1");
+            var element__button2 = document.getElementById("button2");
+
+            if (element__fase2.style.display == "none") {
+                element__fase1.style.display = "none";
+                element__fase2.style.display = "inline";
+                element__button1.style.visibility = "visible";
+                element__button2.style.visibility = "hidden";
+            } else {
+                element__fase1.style.display = "inline";
+                element__fase2.style.display = "none";
+                element__button1.style.visibility = "hidden";
+                element__button2.style.visibility = "visible";
+            }
+        }
+    </script>
 </body>
 
 </html>
