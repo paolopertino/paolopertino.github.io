@@ -6,9 +6,32 @@
     <style>
         @import url(https://allfont.net/allfont.css?fonts=agency-fb);
     </style>
+
+    <script type="text/javascript">
+        function phaseChecker() {
+            let date = new Date();
+            let day = date.getDate();
+            let month = date.getMonth() + 1;
+            let year = date.getFullYear();
+
+            var element__fase1 = document.getElementById("div__fase1");
+            var element__fase2 = document.getElementById("div__fase2");
+            var text__fase2pre = document.getElementById("text__fase2pre");
+            var text__fase2post = document.getElementById("text__fase2post");
+
+            if ((day >= 27 && ((year == 2021 && month == 12) || year == 2022)) && (date.getHours() > 15)) {
+                text__fase2pre.style.display = 'none';
+                text__fase2post.style.display = 'inline';
+            } else {
+                text__fase2pre.style.display = 'inline';
+                text__fase2post.style.display = 'none';
+            }
+        }
+
+    </script>
 </head>
 
-<body style="background-color:#101010;">
+<body style="background-color:#101010;" onload="phaseChecker()">
     <div style="display: flex; justify-content: center;">
         <img src="./assets/img/professorepapelricamato.png" alt="?" style="width: 700px;">
     </div>
@@ -47,16 +70,30 @@
 
         <div style="display: flex;justify-content: center;">
             <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
-                Cara Bang<span style="color: #A62836;">kok</span>, per accedere ai dettagli della Fase 2, ricollegati su
-                questa pagina il 27 Dicembre alle ore 15.<br><br>
-                "In un piano perfetto, non c'è spazio per il caos..."
+                Cara Bang<span style="color: #A62836;">kok</span>, <span id="text__fase2pre"> accedere ai dettagli della
+                    Fase 2, ricollegati su
+                    questa pagina il 27 Dicembre alle ore 15.<br><br>
+                    "In un piano perfetto, non c'è spazio per il caos..."</span>
+                <span id="text__fase2post">è giunto il momento di andare a Torino. Entreremo al Teatro Colosseo entro le
+                    ore 21 del giorno 28 Dicembre. <br>
+                    Ci recheremo sul punto di contatto con una Mercedes GLA180 passando per l'autostrada Torino-Savona.
+                    Accordati con Sav<span style="color: #A62836;">ona</span> per l'orario di partenza. Non sono ammessi
+                    ritardi...<br>
+                    Vi ho procurato 2 biglietti per accedere allo spettacolo di Pintus che inizierà per l'appunto alle ore 21 circa.<br>
+                    Siccome avrete bisogno di molta energia, ti ho lasciato un indispensabile strumento... E' dietro di te, alza il cuscino e prendilo.<br><br>
+                    Bangkok questa è l'ultima volta che avremo una comunicazione diretta... Buona fortuna...<br>
+                    Ah.... un'ultima cosa... salvati nelle note del tuo cellulare il seguente codice 1305 intitolando la nota con CODICEPROFESSORE... </span>
             </p>
         </div>
     </div>
 
-    <div style="display:flex; justify-content: center;"><button id="button1" style="visibility: visible; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;" onclick="changePhase()">Visualizza Fase
+    <div style="display:flex; justify-content: center;"><button id="button1"
+            style="visibility: visible; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;"
+            onclick="changePhase()">Visualizza Fase
             1</button></div>
-    <div style="display:flex; justify-content: center;"><button id="button2" style="visibility: hidden; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;" onclick="changePhase()">Visualizza Fase
+    <div style="display:flex; justify-content: center;"><button id="button2"
+            style="visibility: hidden; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;"
+            onclick="changePhase()">Visualizza Fase
             2</button></div>
 
     <script>
