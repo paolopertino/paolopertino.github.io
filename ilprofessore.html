@@ -19,7 +19,7 @@
             var text__fase2pre = document.getElementById("text__fase2pre");
             var text__fase2post = document.getElementById("text__fase2post");
 
-            if ((day >= 27 && ((year == 2021 && month == 12) || year == 2022)) && (date.getHours() > 15)) {
+            if ((day >= 27 && ((year == 2021 && month == 12) || year == 2022)) && (date.getHours() >= 15)) {
                 text__fase2pre.style.display = 'none';
                 text__fase2post.style.display = 'inline';
             } else {
