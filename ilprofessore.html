@@ -13,18 +13,61 @@
     <div style="display: flex; justify-content: center;">
         <img src="./assets/img/professorepapelricamato.png" alt="?" style="width: 700px;">
     </div>
-    <div>
+
+    <div id="div__fase3" style="display: inline;">
         <div style="display: flex;justify-content: center;">
-            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px; text-align: center;">In un piano perfetto <span
-                    style="color: #A62836;">non esiste il caos...</span></p>
+            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Fa<span
+                    style="color: #A62836;">se 3</span></p>
         </div>
+
         <div style="display: flex;justify-content: center;">
             <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
-                Chissà cosa c'era scritto qui 🤔...
+                Cara Bang<span style="color: #A62836;">kok</span>,
+                Inserisci il CODICEPROFESSORE per verificare la tua identità: <input type="text"
+                    id="profCode" /><br><br>
+                "In un piano perfetto, non c'è spazio per il caos..."
+            </p>
+        </div>
+    </div>
+    <div id="div__fase3_access" style="display: none;">
+        <div style="display: flex;justify-content: center;">
+            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Accesso
+                Co<span style="color: #A62836;">mpletato</span></p>
+        </div>
+
+        <div style="display: flex;justify-content: center;">
+            <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
+                Hai effettuato l'<span style="color: #A62836;">accesso</span>!<br>
+                Fin da quando eri una bambina
+                tiene stretto i sogni fino alla mattina.<br>
+                Se la chiave vuoi trovare, dentro al tuo _ _ _ _ _ _ _ devi cercare!!!
             </p>
         </div>
     </div>
 
+    <div style="display:flex; justify-content: center;"><button id="button1"
+            style="visibility: visible; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;"
+            onclick="verifyCode()">Accedi</button></div>
+
+    <script>
+        function verifyCode() {
+            var element__fase3 = document.getElementById("div__fase3");
+            var element__fase3PostAccess = document.getElementById("div__fase3_access");
+            var access_button = document.getElementById("button1");
+            var insertedCode = document.getElementById("profCode").value;
+
+            if (insertedCode == 1305) {
+                element__fase3.style.display = "none";
+                element__fase3PostAccess.style.display = "inline";
+                access_button.style.visibility = "hidden";
+            } else {
+                element__fase3.style.display = "inline";
+                element__fase3PostAccess.style.display = "none";
+                access_button.style.visibility = "visible";
+                alert("Codice " + insertedCode + " errato");
+            }
+        }
+    </script>
 </body>
 
 </html>
