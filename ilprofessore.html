@@ -7,112 +7,61 @@
         @import url(https://allfont.net/allfont.css?fonts=agency-fb);
     </style>
 
-    <script type="text/javascript">
-        function phaseChecker() {
-            let date = new Date();
-            let day = date.getDate();
-            let month = date.getMonth() + 1;
-            let year = date.getFullYear();
-
-            var element__fase1 = document.getElementById("div__fase1");
-            var element__fase2 = document.getElementById("div__fase2");
-            var text__fase2pre = document.getElementById("text__fase2pre");
-            var text__fase2post = document.getElementById("text__fase2post");
-
-            if ((day >= 27 && ((year == 2021 && month == 12) || year == 2022)) && (date.getHours() >= 15)) {
-                text__fase2pre.style.display = 'none';
-                text__fase2post.style.display = 'inline';
-            } else {
-                text__fase2pre.style.display = 'inline';
-                text__fase2post.style.display = 'none';
-            }
-        }
-
-    </script>
 </head>
 
-<body style="background-color:#101010;" onload="phaseChecker()">
+<body style="background-color:#101010;">
     <div style="display: flex; justify-content: center;">
         <img src="./assets/img/professorepapelricamato.png" alt="?" style="width: 700px;">
     </div>
-    <div id="div__fase1" style="display: none;">
+
+    <div id="div__fase3" style="display: inline;">
         <div style="display: flex;justify-content: center;">
-            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Buon <span
-                    style="color: #A62836;">Natale</span></p>
+            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Fa<span
+                    style="color: #A62836;">se 3</span></p>
         </div>
+
         <div style="display: flex;justify-content: center;">
             <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
-                Cara Bang<span style="color: #A62836;">kok</span>, sono il professore.... Colgo l'occasione per
-                augurarti un felice Natale insieme ai <span style="color: red; font-weight: bold; font-size: small;"> [!
-                    SARS-COV-2 UPDATE !] </span><s>tuoi cari</s> tuoi fratelli.
-            </p>
-        </div>
-        <div style="display: flex;justify-content: center;">
-            <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
-                Oggi, 25 Dicembre 2021, avrà inizio il "Piano Babbo Natale" che ci guiderà nella nostra prossima
-                missione... <br>
-                Non posso fornirti troppi dettagli al momento, è importante che essi rimangano segreti ancora per un
-                po'. <br>
-                La Capitale del Regno di Sardegna ci aspetta... <br>
-                Torna su questa pagina il <span style="color: red; font-weight: bold; font-size: small;"> [! SARS-COV-2
-                    UPDATE !] </span><s>26 Dicembre alle ore 17:00</s> 27 Dicembre alle ore 15, non prima, non
-                dopo...<br><br>
-                Ehi... tranquilla... "Non è come sembra" 😉
+                Cara Bang<span style="color: #A62836;">kok</span>,
+                Inserisci il CODICEPROFESSORE per verificare la tua identità: <input type="text"
+                    id="profCode" /><br><br>
+                "In un piano perfetto, non c'è spazio per il caos..."
             </p>
         </div>
     </div>
-
-    <div id="div__fase2" style="display: inline;">
+    <div id="div__fase3_access" style="display: none;">
         <div style="display: flex;justify-content: center;">
-            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Fa<span
-                    style="color: #A62836;">se 2</span></p>
+            <p style=" display:inline; color: aliceblue; font-family: 'Agency FB',arial; font-size: 60px;">Accesso
+                Co<span style="color: #A62836;">mpletato</span></p>
         </div>
 
         <div style="display: flex;justify-content: center;">
             <p style="color: aliceblue; font-family: 'Agency FB',arial; font-size: 24px; text-align: center;">
-                Cara Bang<span style="color: #A62836;">kok</span>, <span id="text__fase2pre"> accedere ai dettagli della
-                    Fase 2, ricollegati su
-                    questa pagina il 27 Dicembre alle ore 15.<br><br>
-                    "In un piano perfetto, non c'è spazio per il caos..."</span>
-                <span id="text__fase2post">è giunto il momento di andare a Torino. Entreremo al Teatro Colosseo entro le
-                    ore 21 del giorno 28 Dicembre. <br>
-                    Ci recheremo sul punto di contatto con una Mercedes GLA180 passando per l'autostrada Torino-Savona.
-                    Accordati con Sav<span style="color: #A62836;">ona</span> per l'orario di partenza. Non sono ammessi
-                    ritardi...<br>
-                    Vi ho procurato 2 biglietti per accedere allo spettacolo di Pintus che inizierà per l'appunto alle ore 21 circa.<br>
-                    Siccome avrete bisogno di molta energia, ti ho lasciato un indispensabile strumento... E' dietro di te, alza il cuscino e prendilo.<br><br>
-                    Bangkok questa è l'ultima volta che avremo una comunicazione diretta... Buona fortuna...<br>
-                    Ah.... un'ultima cosa... salvati nelle note del tuo cellulare il seguente codice 1305 intitolando la nota con CODICEPROFESSORE... </span>
+                Cara Bang<span style="color: #A62836;">kok</span>, le chiaviiiiiiii
             </p>
         </div>
     </div>
 
     <div style="display:flex; justify-content: center;"><button id="button1"
             style="visibility: visible; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;"
-            onclick="changePhase()">Visualizza Fase
-            1</button></div>
-    <div style="display:flex; justify-content: center;"><button id="button2"
-            style="visibility: hidden; background-color: #A62836; border: none; color: aliceblue; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;"
-            onclick="changePhase()">Visualizza Fase
-            2</button></div>
+            onclick="verifyCode()">Accedi</button></div>
 
     <script>
-        function changePhase() {
-            var element__fase1 = document.getElementById("div__fase1");
-            var element__fase2 = document.getElementById("div__fase2");
-            var element__button1 = document.getElementById("button1");
-            var element__button2 = document.getElementById("button2");
+        function verifyCode() {
+            var element__fase3 = document.getElementById("div__fase3");
+            var element__fase3PostAccess = document.getElementById("div__fase3_access");
+            var access_button = document.getElementById("button1");
+            var insertedCode = document.getElementById("profCode").value;
 
-            if (element__fase2.style.display == "none") {
-                element__fase1.style.display = "none";
-                element__fase2.style.display = "inline";
-                element__button1.style.visibility = "visible";
-                element__button2.style.visibility = "hidden";
+            if (insertedCode == 1305) {
+                element__fase3.style.display = "none";
+                element__fase3PostAccess.style.display = "inline";
+                access_button.style.visibility = "hidden";
             } else {
-                element__fase1.style.display = "inline";
-                element__fase2.style.display = "none";
-                element__button1.style.visibility = "hidden";
-                element__button2.style.visibility = "visible";
+                element__fase3.style.display = "inline";
+                element__fase3PostAccess.style.display = "none";
+                access_button.style.visibility = "visible";
+                alert("Codice " + insertedCode + " errato");
             }
         }
     </script>
