@@ -483,14 +483,17 @@ img {
     background-color: var(--first-color);
 }
 
-.skills__c {
-    width: 70%;
+.skills__C {
+    width: 30%;
 }
 .skills__cpp {
     width: 40%;
 }
+.skills__java {
+    width: 30%;
+}
 .skills__python {
-    width: 55%;
+    width: 65%;
 }
 .skills__html {
     width: 30%;
